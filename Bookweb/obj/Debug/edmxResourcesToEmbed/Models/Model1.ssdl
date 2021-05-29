@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BookDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BookDB.dbo.Book' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BookName" Type="varchar" MaxLength="50" />
+    <Property Name="Author" Type="varchar" MaxLength="50" />
+    <Property Name="Publisher" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="int" />
+  </EntityType>
+  <EntityContainer Name="BookDBModelStoreContainer">
+    <EntitySet Name="Book" EntityType="Self.Book" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Book].[id] AS [id], 
+    [Book].[BookName] AS [BookName], 
+    [Book].[Author] AS [Author], 
+    [Book].[Publisher] AS [Publisher], 
+    [Book].[Price] AS [Price]
+    FROM [dbo].[Book] AS [Book]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

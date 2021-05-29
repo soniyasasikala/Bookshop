@@ -1,0 +1,138 @@
+G:\My projects\Bookweb\Bookweb\bin\roslyn\csc.exe
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.CSharp.Core.targets
+G:\My projects\Bookweb\Bookweb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+G:\My projects\Bookweb\Bookweb\bin\roslyn\System.Collections.Immutable.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\System.Reflection.Metadata.dll
+G:\My projects\Bookweb\Bookweb\bin\roslyn\vbc.exe
+G:\My projects\Bookweb\Bookweb\bin\roslyn\VBCSCompiler.exe
+G:\My projects\Bookweb\Bookweb\bin\roslyn\VBCSCompiler.exe.config
+G:\My projects\Bookweb\Bookweb\bin\Bookweb.dll.config
+G:\My projects\Bookweb\Bookweb\bin\Bookweb.dll
+G:\My projects\Bookweb\Bookweb\bin\Bookweb.pdb
+G:\My projects\Bookweb\Bookweb\bin\Antlr3.Runtime.dll
+G:\My projects\Bookweb\Bookweb\bin\EntityFramework.dll
+G:\My projects\Bookweb\Bookweb\bin\EntityFramework.SqlServer.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.Core.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.Owin.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Host.SystemWeb.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Cookies.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Facebook.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Google.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.OAuth.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Twitter.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Web.Infrastructure.dll
+G:\My projects\Bookweb\Bookweb\bin\Newtonsoft.Json.dll
+G:\My projects\Bookweb\Bookweb\bin\Owin.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Helpers.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Mvc.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Optimization.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Razor.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.Deployment.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.dll
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.Razor.dll
+G:\My projects\Bookweb\Bookweb\bin\WebGrease.dll
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Helpers.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Mvc.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Optimization.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.Razor.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.Deployment.xml
+G:\My projects\Bookweb\Bookweb\bin\System.Web.WebPages.Razor.xml
+G:\My projects\Bookweb\Bookweb\bin\Antlr3.Runtime.pdb
+G:\My projects\Bookweb\Bookweb\bin\Newtonsoft.Json.xml
+G:\My projects\Bookweb\Bookweb\bin\EntityFramework.xml
+G:\My projects\Bookweb\Bookweb\bin\EntityFramework.SqlServer.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.Core.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.Owin.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Host.SystemWeb.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Facebook.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Cookies.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.OAuth.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Google.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.Twitter.xml
+G:\My projects\Bookweb\Bookweb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+G:\My projects\Bookweb\Bookweb\obj\Debug\Bookweb.csprojResolveAssemblyReference.cache
+G:\My projects\Bookweb\Bookweb\obj\Debug\Bookweb.dll
+G:\My projects\Bookweb\Bookweb\obj\Debug\Bookweb.pdb
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\csc.exe
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\vbc.exe
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\VBCSCompiler.exe
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Bookweb.dll.config
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Bookweb.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Bookweb.pdb
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Antlr3.Runtime.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\EntityFramework.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\EntityFramework.SqlServer.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Newtonsoft.Json.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Owin.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Helpers.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Mvc.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Optimization.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Razor.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.Razor.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\WebGrease.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Helpers.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Mvc.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Optimization.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.Razor.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\System.Web.WebPages.Razor.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Antlr3.Runtime.pdb
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Newtonsoft.Json.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\EntityFramework.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\EntityFramework.SqlServer.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\obj\Debug\Bookweb.csprojResolveAssemblyReference.cache
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\obj\Debug\Bookweb.dll
+C:\Users\Soniya\OneDrive\Desktop\Bookshop\Bookweb\obj\Debug\Bookweb.pdb

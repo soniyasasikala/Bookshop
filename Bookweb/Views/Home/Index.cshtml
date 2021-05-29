@@ -1,0 +1,466 @@
+﻿
+@{
+    ViewBag.Title = "Books";
+}
+
+@Styles.Render("~/css/layoutstyle")
+@Html.AntiForgeryToken()
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<body>
+
+     <input id="hdnId" type="hidden" value="0" />
+    <div class="ibox-content">
+
+        @*<div class="col-sm-2">
+            <div class="form-group">
+                <label class="control-label" for="status">Publisher</label>
+                <input id="txtpublisher" name="publisher" type="text" class="form-control required" aria-required="true" value="All">
+            </div>
+        </div>*@
+
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label class="control-label" for="status">Book Name</label>
+                <input id="txtsearchName" name="userName" type="text" class="form-control required" aria-required="true">
+            </div>
+        </div>
+
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label class="control-label" for="status"></label>
+                <div class="">
+                    <input type="button" class="form-control btn-primary" value="Search" style="background-color:rgb(26, 179, 148);color:rgb(255, 255, 255)" onclick="list_books();">
+                </div>
+            </div>
+        </div>
+        
+       
+        <div class="row">
+            <div class="ibox-title">
+                
+                <div class="ibox-tools">
+                    <button type="button" class="btn btn-primary" style="float: right;" onclick="editBooks(0)">
+                        Add Book
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="ibox-content">
+                <div class="table-responsive">
+                    <table id="tblBooks" class="table table-hover table-striped no-margins">
+
+                        <thead>
+                            <tr>
+                                <th>BookName</th>
+                                <th>Author</th>
+                                <th>Publisher</th>
+                                <th>Price</th>
+                                <th>Action</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div class="col-sm-12" id="divPagination" style="text-align: center;">
+                    </div>
+                </div>
+
+                <div class="ibox">
+                    @*<div class="ibox-content" style="overflow-x: auto;">*@
+                    <div class="modal inmodal" id="detailsPopUp" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content animated fadeIn">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" onclick="ResetDetailsPopup();">×</span><span class="sr-only">Close</span></button>
+                                    <!--<i class="fa fa-clock-o modal-icon"></i>-->
+                                    <h4 class="modal-title" id="lbl_prio_label" style="font-size:20px; text-align:center">
+                                        Book Details
+                                    </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <fieldset id="form-p-0" role="tabpanel" aria-labelledby="form-h-0" class="body current " aria-hidden="false">
+                                        <div id="ListDetails">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    @*</div>*@
+                </div>
+
+                @*BooksPopup starts here*@
+
+
+                <div class="ibox">
+                    <div class="ibox-content" style="overflow-x: auto;">
+                        <div>
+                            <div class="ibox-tools">
+                                <div class="modal inmodal" id="BooksPopUp" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+                                    <div class="modal-dialog modal-lg" style="width:60%">
+                                        <div class="modal-content animated fadeIn">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" onclick="ResetBooksPopup();">×</span><span class="sr-only">Close</span></button>
+                                                <!--<i class="fa fa-clock-o modal-icon"></i>-->
+                                                <h4 class="modal-title" id="lbl_prio_label" style="font-size:20px">
+                                                    Add Book
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <fieldset id="form-p-0" role="tabpanel" aria-labelledby="form-h-0" class="body current " aria-hidden="false">
+                                                    <!--<h2>Account Information</h2>-->
+                                                    <div class="row" style="text-align:left">
+                                                      
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="name">Book Name :</label>
+                                                                <input id="txtbook" type="text" class="form-control" style="width:100%" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="name">Author :</label>
+                                                                <input id="txtauthor" type="text" class="form-control" style="width:100%" />
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="name">Publisher  :</label>
+                                                                <input id="txtpublisher" type="text" class="form-control" style="width:100%" />
+                                                            </div>
+                                                        </div>
+                                                        
+
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <label class="control-label" for="name">Price :</label>
+                                                                <input id="txtprice" type="number" class="form-control" style="width:100%" />
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-white" data-dismiss="modal" onclick="ResetBooksPopup();">Close</button>
+                                                <button type="button" class="btn btn-primary" onclick="validateBooks();">Save</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @*BooksPopup end here*@
+            </div>
+        </div>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>*@
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>*@
+    <script type="text/javascript">
+        //$(window).load(function () {
+        //    $('.preloader').delay(1000).fadeOut('slow');
+
+        //});
+
+        $(document).ready(function () {
+
+            list_books();
+
+        });
+
+
+        function list_books() {
+            var postObj = {
+               filters: {
+                   searchName: $("#txtsearchName").val(),
+                }
+            };
+        
+        var htm = "";
+        $("#tblBooks tbody").html("");
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("ListBooks", "Home")",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(postObj),
+            //data: {},
+            dataType: "json",
+            crossDomain: true,
+            timeout: 40000,
+            success: function (msg) {
+                var obj = JSON.parse(msg);
+                console.log(msg);
+                $.each(obj, function (i, row) {
+                    htm += "<tr>";
+
+                    htm += "<td >";
+                    htm += row.BookName;
+                    htm += "</td>";
+
+                    htm += "<td>";
+                    htm += row.Author;
+                    htm += "</td>";
+
+                    htm += "<td>";
+                    htm += row.Publisher;
+                    htm += "</td>";
+
+
+
+                    htm += "<td>";
+                    htm += row.Price;
+                    htm += "</td>";
+
+
+                    htm += "<td class='project-title'>";
+                    htm += "<a class='btn btn-white btn-sm' onclick='editBooks(" + row.id + ");'><i class='fa fa-pencil'></i> Edit </a>";
+                    htm += "<a class='btn btn-white btn-sm' onclick='book_details(" + row.id + ");'><i class='fa fa-pencil'></i> Details </a>";
+                    htm += "<a class='btn btn-white btn-sm' onclick='deleteBooks(" + row.id + ");'><i class='fa fa-pencil'></i> Delete </a>";
+                    htm += "</td>";
+                    htm += "</tr>";
+                });
+
+                $('#tblBooks> tbody').append(htm);
+
+
+            },
+            error: function (xhr, status) {
+                //var msgObj = JSON.parse(xhr.responseText);
+                //alert(JSON.parse(msgObj.d).errmsg);
+                alert("something went wrong")
+            }
+        });
+        };
+
+        function editBooks(id) {
+            $("#hdnId").val(id);
+            var postObj = {
+                filters: {
+                    id: id,
+                }
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("GetBook", "Home")",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(postObj),
+                dataType: "json",
+                crossDomain: true,
+                timeout: 40000,
+                success: function (msg) {
+                    var obj = JSON.parse(msg);
+                    console.log(msg);
+                    $.each(obj, function (i, row) {
+                        $("#txtbook").val(row.BookName);
+                        $("#txtauthor").val(row.Author);
+                        $("#txtpublisher").val(row.Publisher);
+                        $("#txtprice").val(row.Price);
+                    });
+
+                    $("#BooksPopUp").modal('show');
+                },
+                error: function (xhr, status) {
+                    alert("something went wrong.........")
+
+                }
+            });
+        }
+
+        function book_details(id) {
+
+            $("#hdnId").val(id);
+            // load_overlay();
+            var postObj = {
+                filters:{
+                    id:id,
+                }
+               
+            };
+
+            var htm = "";
+           // $("#detailsPopUp").html("");
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("BooksDetails", "Home")",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(postObj),
+                dataType: "json",
+                crossDomain: true,
+                timeout: 20000,
+                success: function (msg) {
+
+                    var obj = JSON.parse(msg);
+                    console.log(msg);
+                    $.each(obj, function (i, row) {
+                        htm += "<ul class='list-group'>";
+
+                        htm += "<li class='list-group-item'>";
+                        htm += " <b>Name </b>:  " + row.BookName;
+                        htm += "</li>";
+
+                        htm += "<li class='list-group-item'>";
+                        htm += " <b>Parent </b> :  " + row.Author;
+                        htm += "</li>";
+
+                        htm += "<li class='list-group-item'>";
+                        htm += "<b>Spouse </b>:  " + row.Publisher;
+                        htm += "</li>";
+
+                        htm += "<li class='list-group-item'>";
+                        htm += "<b>Category </b>:  " + row.Price;
+                        htm += "</li>";
+
+
+
+                    });
+                    //close_overlay();
+                   // $('#tblSales> tbody').append(htm);
+                    $("#detailsPopUp").modal('show');
+                    $('#ListDetails').append(htm);
+
+                  
+                },
+                error: function (xhr, status) {
+                    var msgObj = JSON.parse(xhr.responseText);
+                    alerterror(msgObj, xhr);
+                }
+            });
+        }
+
+        function deleteBooks(id) {
+            $("#hdnId").val(id);
+            var postObj = {
+                filters: {
+                    id: id,
+                }
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("DeleteBook", "Home")",
+                contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(postObj),
+            dataType: "json",
+            crossDomain: true,
+            timeout: 40000,
+            success: function (msg) {
+                var obj = JSON.parse(msg);
+                console.log(msg);
+                alert("deleted successfully");
+                list_books();
+
+                $("#SalesPopUp").modal('show');
+            },
+            error: function (xhr, status) {
+                alert("something went wrong.........")
+
+            }
+        });
+        }
+
+
+        function validateBooks() {
+
+            $('#BooksPopUp').append('<div class="preloader"></div>');
+            if ($("#txtbook").val() == '') {
+                $("#txtbook").focus();
+                //$('.preloader').hide();
+                alert("Enter Book Name");
+                return;
+            }
+            if ($("#txtauthor").val() == '') {
+                $("#txtauthor").focus();
+                //$('.preloader').hide();
+                alert("Enter Author Name");
+                return;
+            }
+            if ($("#txtpublisher").val() == '') {
+                $("#txtpublisher").focus();
+                //$('.preloader').hide();
+                alert("Enter Publisher ");
+                return;
+            }
+            if ($("#txtprice").val() == '') {
+                $("#txtprice").focus();
+                //$('.preloader').hide();
+                alert("Enter Price");
+                return;
+            }
+
+            saveSales();
+        }
+
+        function saveSales() {
+
+            var postObj = {
+                id: $("#hdnId").val(),
+                bookname: $("#txtbook").val(),
+                author: $("#txtauthor").val(),
+                publisher: $("#txtpublisher").val(),
+                price: $("#txtprice").val(),
+
+            }
+
+            var formData = new FormData();
+            formData.append("postObj", JSON.stringify(postObj));
+
+            $.ajax({
+                type: "POST",
+                url: "@Url.Action("SaveBook", "Home")",
+                contentType: false,
+                processData: false,
+                data: formData,
+                crossDomain: true,
+                timeout: 20000,
+
+                success: function (msg) {
+                    alert('Saved Succesfully');
+                    list_books();
+                    ResetBooksPopup();
+                    $("#BooksPopUp").modal('hide');
+
+                },
+
+                error: function (xhr, status) {
+                    var msgObj = JSON.parse(xhr.responseText);
+                    alerterror(JSON.parse(msgObj).errmsg);
+                    alert("not updated")
+                    //$('.preloader').hide();
+                }
+            });
+        }
+        function ResetDetailsPopup() {
+            $("#ListDetails").html("");
+        }
+        function ResetBooksPopup() {
+            $("#hdnId").val(0);
+            $("#pdtname").val("");
+            $("#catname").val("");
+            $("#txtauthor").val("");
+            $("#txtqty").val("");
+            $("#txtprice").val("");
+        }
+
+    </script>
+</body>
+</body>
+
